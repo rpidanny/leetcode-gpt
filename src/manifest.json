@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Leetcode GPT",
+  "description": "LeetCodeGPT is a Chrome extension that integrates GPT into the LeetCode, allowing users to automatically solve LeetCode problems with the click of a button.",
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon-code-50.png"
+  },
+  "icons": {
+    "100": "icon-code-100.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["contentScript.bundle.js"],
+      "css": ["content.styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content.styles.css",
+        "icon-code-50.png",
+        "icon-code-100.png"
+      ],
+      "matches": []
+    },
+    {
+      "resources": ["monaco.bundle.js"],
+      "matches": ["https://leetcode.com/*"]
+    }
+  ],
+  "permissions": ["storage"]
+}

@@ -1,0 +1,64 @@
+.container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  height: 100%;
+  /* margin: 0 auto; */
+  padding: 20px;
+  text-align: center;
+  background-color: #0d1117;
+  color: #f0f6fc;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #f0f6fc;
+}
+
+.card {
+  background-color: #161b22;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  padding: 24px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #c9d1d9;
+}
+
+.input {
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.btn {
+  font-size: 1rem;
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #218838;
+}

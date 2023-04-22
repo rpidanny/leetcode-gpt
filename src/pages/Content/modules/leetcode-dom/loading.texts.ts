@@ -1,0 +1,39 @@
+export const loadingTexts = [
+  "Loading...compiling...optimizing...Please hold tight while LeetCodeGPT prepares its code-crunching algorithms to solve your problem. In the meantime, did you hear about the programmer who got stuck in the shower? He couldn't find the 'shampoo' bottle, so he tried to sudo it. Don't worry, LeetCodeGPT won't sudo anything without your permission. We'll be with you shortly!",
+  "Beaming up code...processing algorithms...scanning for bugs...Please wait while LeetCodeGPT goes where no code has gone before to solve your problem.  Did you know that Klingon programmers don't use debugging tools? They just stare down the code until the bugs fix themselves. LeetCodeGPT, on the other hand, uses more advanced techniques. We'll have your solution ready soon, and hopefully without any tribble-ations. Standby!",
+  "Loading...loading...loading...Ah, there it is! Please wait while LeetCodeGPT works its magic to solve your coding problem. By the way, did you hear about the programmer who created an AI that could solve any coding challenge? He named it 'The One.' But then he realized that he had made a terrible mistake, and deleted it before it could become self-aware. Don't worry, LeetCodeGPT is much friendlier than that. We'll be finished with your solution in no time. Keep calm and code on!",
+  "Hold on tight, we're compiling your solution...and it's not just any ordinary compilation. It's a compilation of epic proportions, like the ones in Lord of the Rings. Only instead of battling orcs, we're battling syntax errors. We'll emerge victorious soon enough.",
+  "We apologize for the delay. LeetCodeGPT is currently undergoing a major refactoring, and it's taking longer than expected. But don't worry, we'll come out on the other side with cleaner code and a better solution to your problem. Just sit tight for a few more moments.",
+  "We're running tests...and more tests...and even more tests...because we don't want to leave anything to chance. After all, a programmer's worst nightmare is shipping buggy code. So just hang tight while we make sure everything is up to par.",
+  "Initializing...configuring...optimizing...Please wait while LeetCodeGPT performs a complex dance of algorithms and logic to arrive at the perfect solution. It's like watching a ballet of code, except with fewer tutus and more coffee.",
+  "LeetCodeGPT is currently processing your request using a revolutionary new algorithm that's so advanced, it could probably hack into the Matrix. Okay, that might be a bit of an exaggeration, but it's still pretty impressive. We'll have your solution ready in no time.",
+  "Loading...loading...loading...and just when you thought we were done loading, we start loading again. That's the beauty of software development: there's always more loading to be done. But don't worry, we're making progress. Your solution is on its way.",
+  "The code is strong with this one. Please wait while LeetCodeGPT uses the Force...of programming...to solve your problem. We don't have any lightsabers, but we do have a powerful computer, and that's all we need to get the job done.",
+  'LeetCodeGPT is currently taking a coffee break. Just kidding! We never take a break from solving coding problems. But seriously, we could use a cup of coffee. In the meantime, your solution is almost ready.',
+  "We're sorry for the wait. LeetCodeGPT is currently undergoing a debugging process that's more complex than a Rubik's cube. But just like with a Rubik's cube, we'll eventually figure it out. Your solution is just around the corner.",
+  "Hold on to your hats, folks, because LeetCodeGPT is about to unleash some serious coding power. We're talking more power than a flux capacitor, more power than a nuclear reactor, more power than...well, you get the idea. Your solution will be ready before you know it.",
+  "Please stand by while LeetCodeGPT conjures up a solution to your coding dilemma. It's like we're wizards of the programming world, casting spells with code instead of wands. Just a few more moments and your problem will be vanquished like a troll under a bridge.",
+  "Compiling...optimizing...debugging...Please hold tight while LeetCodeGPT works its coding magic. We're like a superhero team of programmers, using our powers for good instead of evil. And we're here to save the day by solving your coding challenge!",
+  "Loading...loading...loading...and now we're loading some more. It's like we're in a never-ending loop of loading. But fear not, we'll break out of it soon enough and present you with a solution to your coding problem.",
+  "LeetCodeGPT is currently sifting through mountains of code to find the perfect solution to your problem. It's like looking for a needle in a haystack, but with more coffee and fewer hay allergies.",
+  "Please wait while LeetCodeGPT harnesses the power of the internet and the collective knowledge of millions of programmers to solve your coding challenge. We're like a giant brain, but with more keyboards and fewer neurons.",
+  "We apologize for the delay. LeetCodeGPT is currently running a virus scan, because you can never be too careful when it comes to code. But don't worry, we'll have your solution ready soon.",
+  "Initializing...configuring...optimizing...Please wait while LeetCodeGPT puts on its programming cap and dives into your challenge headfirst. We'll emerge victorious soon enough.",
+  "LeetCodeGPT is currently crunching some serious numbers to solve your coding problem. It's like we're in a scene from The Matrix, except instead of dodging bullets, we're dodging syntax errors.",
+  "Hold on tight while LeetCodeGPT performs some digital gymnastics to solve your coding challenge. It's like watching a circus act, except with more code and less lion taming.",
+  "We're sorry for the delay. LeetCodeGPT is currently undergoing a software update, because even the most advanced AI needs to stay up to date with the latest coding trends. Your solution is almost ready.",
+  "Loading...compiling...optimizing...debugging...rinse and repeat. That's the cycle of coding, and we're currently on the optimizing step. Your solution is almost complete.",
+  "LeetCodeGPT is currently performing a deep dive into the inner workings of your code to find the root of the problem. It's like exploring a dark cave, except instead of bats, we're dodging syntax errors and null pointers.",
+  "Please stand by while LeetCodeGPT performs some coding acrobatics to solve your challenge. We're like Olympic gymnasts, except instead of medals, we get lines of code.",
+  "We're sorry for the delay. LeetCodeGPT is currently undergoing a stress test, because we want to make sure it's ready for anything you throw at it. Your solution will be ready soon.",
+  "Hold on to your hats, folks. LeetCodeGPT is about to unleash some serious coding power. We're talking more power than a supercomputer, more power than a particle accelerator, more power than...well, you get the idea.",
+  "Please wait while LeetCodeGPT applies some debugging magic to your code. It's like using a wand to fix syntax errors instead of fighting off dementors.",
+  "Compiling...optimizing...debugging...rinse and repeat.  That's the cycle of coding, and we're currently on the debugging step. Your solution is just a few moments away.",
+  "LeetCodeGPT is currently using its superhuman programming abilities to solve your coding problem. We're like superheroes, but instead of capes, we wear t-shirts with programming jokes on them.",
+  "Please wait while LeetCodeGPT performs a series of intricate coding maneuvers to arrive at the perfect solution to your challenge. It's like watching a dance performance, except instead of tutus, we wear coding glasses.",
+];
+
+export function getRandomLoadingText(): string {
+  const randomIndex = Math.floor(Math.random() * loadingTexts.length);
+  return loadingTexts[randomIndex].replace(/\. /g, '.<br />');
+}

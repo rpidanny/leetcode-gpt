@@ -69,7 +69,7 @@ export class LeetCodeDOM {
 
   getQuestion(): string {
     return this.getTextContent(
-      'div[data-track-load="qd_description_content"]'
+      'div[data-track-load="description_content"]'
     )?.split('Example 1')[0];
   }
 

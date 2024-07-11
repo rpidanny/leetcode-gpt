@@ -1,10 +1,10 @@
 name: CI
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - '*'
+
 
 jobs:
   build:
@@ -22,7 +22,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
-      run: |
-        npm ci
-        npm run build:dev
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Lint
+      run: npm run lint
+
+    - name: Build Dev
+      run: npm run build:dev
+
+    - name: Build Prod
+      run: npm run build

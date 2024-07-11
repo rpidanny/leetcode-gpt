@@ -1,8 +1,8 @@
 name: Package
 
 on:
-  # release:
-  #   types: [published]
+  release:
+    types: [published]
   # support manual release in case something goes wrong and needs to be repeated or tested
   workflow_dispatch:
     inputs:

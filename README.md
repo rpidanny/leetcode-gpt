@@ -17,7 +17,7 @@
 
 To install the extension, follow these steps:
 
-1. Download the extension from [beta/leetcode-gpt-0.0.1.zip](beta/leetcode-gpt-0.0.1.zip).
+1. Download the latest [release](https://github.com/rpidanny/leetcode-gpt/releases) from the GitHub repository.
 2. Unzip the downloaded extension.
 3. Open Google Chrome and go to the Extensions page.
 4. Enable `Developer mode`.

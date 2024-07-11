@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/rpidanny/leetcode-gpt/compare/v1.0.0...v1.1.0) (2024-07-11)
+
+### Features
+
+* update OpenAI Models ([#13](https://github.com/rpidanny/leetcode-gpt/issues/13)) ([496a3ed](https://github.com/rpidanny/leetcode-gpt/commit/496a3ed8dc8b87610da0ef4e40731742dc8dcc19))
+
 ## 1.0.0 (2024-07-11)
 
 ### Features

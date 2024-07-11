@@ -1,6 +1,6 @@
 {
   "name": "leetcode-gpt",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "LeetCodeGPT is a Chrome extension that integrates GPT (Generative Pre-trained Transformer) into the LeetCode.",
   "license": "MIT",
   "repository": {

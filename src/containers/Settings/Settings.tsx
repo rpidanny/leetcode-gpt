@@ -80,14 +80,7 @@ const Settings = () => {
           onChange={handleModelChange}
           defaultValue={OpenAIChatModel.GPT_3_5_TURBO}
         >
-          <option value={OpenAIChatModel.GPT_3_5_TURBO}>GPT 3.5 Turbo</option>
-          <option value={OpenAIChatModel.GPT_3_5_TURBO_0301}>
-            GPT 3.5 Turbo 0301
-          </option>
-          <option value={OpenAIChatModel.GPT_4}>GPT 4</option>
-          <option value={OpenAIChatModel.GPT_4_0314}>GPT 4 0314</option>
-          <option value={OpenAIChatModel.GPT_4_32K}>GPT 4 32K</option>
-          <option value={OpenAIChatModel.GPT_4_32K_0314}>GPT 4 32K 0314</option>
+          ${...Object.values(OpenAIChatModel).map(value => (<option value={value}>{value}</option>))}
         </select>
       </div>
       <br />
